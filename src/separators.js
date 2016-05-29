@@ -1,10 +1,6 @@
 'use strict';
 
 function thousands_separators(num) {
-	var reg=/^(\+|-)?(\d+)(\.\d+)?$/;
-	if(!reg.test(num)){ 
-		return num; 
- 	} 
 	var a = RegExp.$1,b = RegExp.$2,c = RegExp.$3; 
 	var re = new RegExp().compile("(\\d)(\\d{3})(,|$)"); 
 	while(re.test(b)){ 
