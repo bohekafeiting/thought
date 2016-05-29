@@ -9,8 +9,8 @@ function thousands_separators(num) {
 	while(re.test(b)){ 
  		b=b.replace(re,"$1,$2$3"); 
  	} 
-	var tex=(a +""+ b +""+ c).toString();
-	return tex;
+	var tex=(a +""+ b +""+ c);
+	return tex.valueOf().toString();
   
 }
 
