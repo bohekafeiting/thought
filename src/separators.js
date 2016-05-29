@@ -1,7 +1,8 @@
 'use strict';
 
 function thousands_separators(num) {
-if(!((/^(\+|-)?(\d+)(\.\d+)?$/).test(num))){ 
+	var reg=/^(\+|-)?(\d+)(\.\d+)?$/;
+	if(!reg.test(num)){ 
 		return num; 
  	} 
 	var a = RegExp.$1,b = RegExp.$2,c = RegExp.$3; 
@@ -11,5 +12,4 @@ if(!((/^(\+|-)?(\d+)(\.\d+)?$/).test(num))){
  	} 
 	return a +""+ b +""+ c; 
 }
-
 module.exports = thousands_separators;
