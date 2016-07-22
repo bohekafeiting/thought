@@ -17,4 +17,5 @@ function thousands_separators(num) {
 	return num = _int + _point;
 	} 
 }
+console.log();
 module.exports = thousands_separators;
